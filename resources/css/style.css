@@ -28,6 +28,7 @@ header {
 header .content {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 header .logo {
@@ -46,6 +47,9 @@ header a {
 
 nav ul {
     display: flex;
+    justify-content: flex-end; /* Aligns nav items to the right */
+    margin-left: auto; /* Pushes nav to the right */
+
 }
 
 nav ul li {
@@ -62,6 +66,8 @@ header .mobile {
 
 
 /* main content */
+
+
 
 
 /* desktop and tablet viewport */
