@@ -19,6 +19,7 @@ html, body {
 
 header {
     position: fixed; 
+    top: 0;
     width: 100%;
     z-index: 100;
     background-color: antiquewhite;
@@ -36,8 +37,7 @@ header .logo {
 }
 
 header .icon {
-    width: 1rem;
-    
+    width: 1rem;    
 }
 
 header a {
@@ -53,19 +53,37 @@ nav ul li {
     /*  margin-right: 1.875rem; 30px */
     text-align: right;
     padding: 1.875rem;
+    right: 1.875rem;
 }
 
+header .mobile {
+    display: none;
+}
+
+
+/* main content */
 
 
 /* desktop and tablet viewport */
 @media only screen and (min-width: 601px) {
-
+    header .content {
+        height: 5.313rem;
+    }
+    
+    .main-content {
+        display: relative;
+        margin-top: 5.313rem;
+    }
 }
 
 
-/* desktop and tablet viewport */
+/* mobile viewport */
 @media only screen and (max-width: 600px) {
-    /* header {
-        background-color: greenyellow;
-    } */
+    header .content {
+        height: 3rem;
+    }
+
+    .main-content {
+        margin-top: 3rem;
+    }
 }
