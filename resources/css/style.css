@@ -38,7 +38,8 @@ header .logo {
 }
 
 header .icon {
-    width: 1rem;    
+    width: 1rem; 
+    padding-left: 0.5rem;
 }
 
 header a {
@@ -60,36 +61,65 @@ nav ul li {
     right: 1.875rem;
 }
 
-header .mobile {
-    display: none;
-}
-
 
 /* main content */
+.main-content {
+    position: relative;
+    
+}
 
+#sign-up-section {
+    display: flex;
+    position: relative;
+}
 
-
-
-/* desktop and tablet viewport */
-@media only screen and (min-width: 601px) {
+/* desktop viewport */
+@media only screen and (min-width: 1024px) {
     header .content {
         height: 5.313rem;
     }
     
-    .main-content {
-        display: relative;
-        margin-top: 5.313rem;
+    .mobile {
+        display: none;
+    }
+    
+    .main-content {        
+        top: 5.313rem;
     }
 }
 
+/* tablet viewport */
+@media only screen and (max-width: 1023px) {
+    header .content {
+        height: 4rem;
+        background-color: aquamarine;
+    }
+    
+    .mobile .button {
+        display: block;
+        background-color: #95c20b;
+        color: white;
+        padding: 0.1875rem 0.5rem;
+    }
+
+    .mobile img {
+        display: none;
+    }
+
+    .main-content {        
+        top: 4rem;
+    }
+
+    
+}
 
 /* mobile viewport */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 375px) {
     header .content {
         height: 3rem;
     }
 
     .main-content {
-        margin-top: 3rem;
+        top: 3rem;
     }
 }
