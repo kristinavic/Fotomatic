@@ -50,14 +50,13 @@ nav ul {
     display: flex;
     justify-content: flex-end; /* Aligns nav items to the right */
     margin-left: auto; /* Pushes nav to the right */
-
 }
 
 nav ul li {
     list-style-type: none;
     /*  margin-right: 1.875rem; 30px */
     text-align: right;
-    padding: 1.875rem;
+    padding: 1rem;
     right: 1.875rem;
 }
 
@@ -95,10 +94,13 @@ nav ul li {
         background-color: aquamarine;
     }
     
+    /* Join Us navbar button */
     .mobile .button {
-        display: block;
+        /* display: inline;
+        position: relative; */
         background-color: #95c20b;
         color: white;
+        border-radius: 0.25rem;
         padding: 0.1875rem 0.5rem;
     }
 
