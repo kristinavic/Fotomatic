@@ -28,13 +28,14 @@ header {
 header .content {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: right;
 }
 
 header .logo {
     font-family: "Roboto-Mono", sans-serif;
     font-size: 1.5rem;
-    padding: 1.875rem;
+    left: 1.875rem; /* 30px */
+    position: fixed;
 }
 
 header .icon {
@@ -50,6 +51,7 @@ nav ul {
     display: flex;
     justify-content: flex-end; /* Aligns nav items to the right */
     margin-left: auto; /* Pushes nav to the right */
+    padding: 0;
 }
 
 nav ul li {
@@ -88,7 +90,7 @@ nav ul li {
 }
 
 /* tablet viewport */
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 1023px)  {
     header .content {
         height: 4rem;
         background-color: aquamarine;
@@ -96,17 +98,20 @@ nav ul li {
     
     /* Join Us navbar button */
     .mobile .button {
-        /* display: inline;
-        position: relative; */
+        display: inline;
+        position: relative; 
         background-color: #95c20b;
         color: white;
         border-radius: 0.25rem;
         padding: 0.1875rem 0.5rem;
+        margin: 0 0.5rem;
     }
 
-    .mobile img {
+    .mobile ul li:not(:last-child) {
         display: none;
     }
+
+ 
 
     .main-content {        
         top: 4rem;
