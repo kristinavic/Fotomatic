@@ -1,80 +1,147 @@
+/*  16px = 1 rem
+    24px = 1.5 rem
+    30px = 1.875rem
+    48px = 3 rem
+    85px = 5.313 rem */
+
+html, body {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #4a4a4a;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* header */
 
 header {
-    width: 100%;
-    color: #4a4a4a;
-    background-color: greenyellow;
-    position: fixed;
+    position: fixed; 
     top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+header .content {
     display: flex;
     align-items: center;
-    z-index: 1000;
+    justify-content: right;
+    position: relative;
+    background-color: #ffffff;
 }
 
-.content {
-    display: inline-flex;
+header .logo {
+    font-family: "Roboto-Mono", sans-serif;
+    font-size: 1.5rem;
+    left: 1.875rem; /* 30px */
+    position: fixed;
 }
 
+header .icon {
+    width: 1rem; 
+    padding-left: 0.5rem;
+}
 
+header a {
+    text-decoration: none;
+}
 
+nav ul {
+    display: flex;
+    justify-content: space-between; 
+    margin-left: auto; 
+    padding: 0;
+}
 
-/* desktop & tablet viewport */
-@media only screen and (min-width: 376px) {
-    .desktop {
-        height: 85px;
-        display: flex;
-        align-items: center;
-        margin-right: 100px;
+nav ul li {
+    list-style-type: none;
+    text-align: right;
+    margin: 0 1rem;
+    display: flex;
+    align-items: center;
+}
+
+/* Join Us navbar button */
+.mobile .button {
+    display: inline;
+    position: relative; 
+    background-color: #95c20b;
+    color: white;
+    border-radius: 0.25rem;
+    padding: 0.1875rem 0.5rem;
+}
+
+.desktop {
+    display: block;
+}
+
+/* main content */
+.main-content {
+    position: relative;
+    
+}
+
+#sign-up-section {
+    display: flex;
+    position: relative;
+}
+
+/* desktop viewport */
+@media only screen and (min-width: 1024px) {
+    header .content {
+        height: 5.313rem;
+    }
+
+    nav ul li {
+        margin: 1.875rem; 
     }
     
-    .desktop ul{
-        font-size: 16px;
-        font-family: "Roboto", sans-serif;
-        font-weight: 400;
-        line-height: 1.6;
-        display: flex;
-        align-items: center;
-        margin: 0;
-        padding: 0;
-        position: absolute;
-        right: 0;
-    } 
-
-    .desktop li {
-        display: inline;        
-        margin-left: 30px
-    }
-
-    .desktop.logo {
-        color: #4a4a4a;
-        font-size: 24px;
-        font-family: "Roboto Mono", serif;
-        font-weight: 400;
-        margin-left: 30px;
-        display: flex;
-        align-items: center;
-    }
-    .desktop .icon {
-        display: inline;
-        align-items: baseline;
-        height: 10%; 
-        width: 10%;
-        margin-left: 30px;
-    }
     .mobile {
         display: none;
     }
+    
+    .main-content {        
+        top: 5.313rem;
+    }
 }
 
+/* tablet viewport */
+@media only screen and (max-width: 1023px) and (min-width: 621px) {
+    header .content {
+        height: 4rem;
+    }
+    
+    .mobile ul li:not(:last-child) {
+        display: none;
+    } 
+    /* hides everything in .mobile except last element */
+
+    .main-content {        
+        top: 4rem;
+    }
+}
 
 /* mobile viewport */
-@media only screen and (max-width: 375px) {
-
-    }
+@media only screen and (max-width: 620px) {
     .desktop {
         display: none;
     }
 
+    header .content {
+        height: 3rem; /* 48px */
+        display: flex;
+        justify-content: left;
+    }
+
     .mobile {
+        width: 100%; 
         display: block;
+        justify-content: space-between;
+    }
+
+    .main-content {
+        top: 3rem; /* 48px */
     }
 }
