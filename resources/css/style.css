@@ -48,6 +48,10 @@ header a {
     text-decoration: none;
 }
 
+a:active, a:visited, a:link {
+    color: #4a4a4a;
+}
+
 nav ul {
     display: flex;
     justify-content: space-between; 
