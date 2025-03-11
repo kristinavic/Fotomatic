@@ -154,8 +154,23 @@ nav ul li {
 /* --- Sign up section --- */
 #sign-up-section {
     height: 43.75rem; /* 700px */
-    max-width: 100%;
+    width: 100%;
     background-image: url("../images/banner-landingpage.jpg");
     background-position: center;
     background-size: cover;
+}
+
+/* tablet viewport */
+@media only screen and (max-width: 1023px) and (min-width: 621px) {
+    #sign-up-section {
+        height: 30rem; /* 480px */
+    }
+}
+
+/* mobile viewport */
+@media only screen and (max-width: 620px) {
+    #sign-up-section {
+        height: 20rem; /* 320px */
+        background-position: right;
+    }
 }
