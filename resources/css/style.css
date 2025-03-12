@@ -174,7 +174,6 @@ nav ul li {
     top: 10.625rem; /* 170px */
     bottom: 10.625rem; /* 170px */
     justify-items: center;
-    
 }
 
 #sign-up-cta .content {        
@@ -182,6 +181,7 @@ nav ul li {
     background-color: #9DC20a;
     border: 0.125rem solid #979797; /* 1px */
     border-radius: 0.25rem; /* 4px */    
+    /* padding: 2rem 0 3.5rem 0; 32px 0 56px 0 */
 }
 
 #sign-up-cta .header {
