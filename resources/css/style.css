@@ -15,7 +15,7 @@ html, body {
 }
 
 
-/* header */
+/* -- HEADER -- */
 
 header {
     position: fixed; 
@@ -81,20 +81,6 @@ nav ul li {
     display: block;
 }
 
-/* main content */
-.main-content {
-    position: relative;
-}
-
-
-.center {
-    text-align: center;
-}
-
-#sign-up-section {
-    display: flex;
-    position: relative;
-}
 
 /* desktop viewport */
 @media only screen and (min-width: 1024px) {
@@ -155,9 +141,24 @@ nav ul li {
 }
 
 
-/* --- Sign up section --- */
+/* -- MAIN CONTENT -- */
+
+.main-content {
+    position: relative;
+}
+
+.center {
+    text-align: center;
+}
+
+
+
+
+/* --- SIGN UP SECTION --- */
 
 #sign-up-section {
+    display: flex;
+    position: relative;
     height: 43.75rem; /* 700px */
     width: 100%;
     background-image: url("../images/banner-landingpage.jpg");
@@ -165,22 +166,6 @@ nav ul li {
     background-size: cover;
 }
 
-
-
-/* tablet viewport */
-@media only screen and (max-width: 1023px) and (min-width: 621px) {
-    #sign-up-section {
-        height: 30rem; /* 480px */
-    }
-}
-
-/* mobile viewport */
-@media only screen and (max-width: 620px) {
-    #sign-up-section {
-        height: 20rem; /* 320px */
-        background-position: right;
-    }
-}
 #sign-up-cta {
     position: relative;
     left: 6.25rem; /* 100px */
@@ -190,13 +175,11 @@ nav ul li {
     
 }
 
-#sign-up-cta .content {
-    
+#sign-up-cta .content {        
     color:#ffffff;
     background-color: #9DC20a;
     border: 0.125rem solid #979797; /* 1px */
-    border-radius: 0.25rem; /* 4px */
-    
+    border-radius: 0.25rem; /* 4px */    
 }
 
 #sign-up-cta .header {
@@ -243,4 +226,37 @@ nav ul li {
     background-color: #4a4a4a;
     border-radius: 0.25rem; /* 4px */
     align-content: center;
+}
+
+
+/* tablet viewport */
+@media only screen and (max-width: 1023px) and (min-width: 621px) {
+    #sign-up-section {
+        height: 30rem; /* 480px */
+        justify-content: center;
+    }
+
+    #sign-up-cta {
+        left:0;
+        top: 0;
+        align-content: center;
+    }
+
+    #sign-up-cta .content{
+        background-color: transparent;
+        border: none;
+        margin: 0;
+        font-size: 80%;
+    }
+    #sign-up-cta .email {
+        display: none;
+    }
+}
+
+/* mobile viewport */
+@media only screen and (max-width: 620px) {
+    #sign-up-section {
+        height: 20rem; /* 320px */
+        background-position: right;
+    }
 }
