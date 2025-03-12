@@ -9,6 +9,7 @@ html, body {
     font-size: 16px;
     font-weight: 400;
     color: #4a4a4a;
+    background-color: #E5E4E2;
     width: 100%;
     margin: 0;
     padding: 0;
@@ -149,6 +150,7 @@ nav ul li {
 
 .center {
     text-align: center;
+    justify-items: center;
 }
 
 
@@ -229,7 +231,7 @@ nav ul li {
 }
 
 
-/* tablet viewport */
+/* tablet viewport  (Sign up sect.) */
 @media only screen and (max-width: 1023px) and (min-width: 621px) {
     #sign-up-section {
         height: 30rem; /* 480px */
@@ -253,7 +255,7 @@ nav ul li {
     }
 }
 
-/* mobile viewport */
+/* mobile viewport  (Sign up sect.) */
 @media only screen and (max-width: 620px) {
     #sign-up-section {
         height: 20rem; /* 320px */
@@ -284,5 +286,69 @@ nav ul li {
 
     #sign-up-cta .email {
         display: none;
+    }
+}
+
+
+
+/* -- FEATURES SECTION -- */
+
+#features-section {
+    display: flex;
+    padding: 4rem 3rem 2.875rem 3rem;
+    justify-content: center;
+    gap: 2.375rem; /* 38px */
+}
+
+
+/* image and text box */
+#features-section .feature {
+    background-color: #ffffff;
+    height: 39.688rem; /* 635px */
+    width: 40rem; /* 640px */    
+}
+
+/* image */
+#features-section .image-container {
+    height: 65%;
+    width: 90%;
+    margin: 2rem 2rem 0 2rem;
+}
+
+#features-section img {
+    width: 100%;
+    height: auto;
+}
+
+/* text */
+#features-section .content {
+    height: 11.688rem; /* 187px */
+    color: #4A4a4a;
+    font-family: "Roboto", sans-serif;
+    line-height: 1.2;
+    padding: 2.5rem;
+}
+
+#features-section h2 {
+    font-size: 2.25rem; /* 36px */    
+    font-weight: 800;
+    margin: 0;
+}
+
+#features-section h3 {
+    font-size: 1rem; 
+    font-weight: 200;
+}
+
+/* tablet viewport  (Features sect.) */
+@media only screen and (max-width: 1023px) and (min-width: 621px) {
+    
+}
+
+/* mobile viewport  (Features sect.) */
+@media only screen and (max-width: 620px) {
+    #features-section {
+        display: grid;
+        grid-template-columns: 1fr;
     }
 }
