@@ -84,7 +84,11 @@ nav ul li {
 /* main content */
 .main-content {
     position: relative;
-    
+}
+
+
+.center {
+    text-align: center;
 }
 
 #sign-up-section {
@@ -152,6 +156,7 @@ nav ul li {
 
 
 /* --- Sign up section --- */
+
 #sign-up-section {
     height: 43.75rem; /* 700px */
     width: 100%;
@@ -159,6 +164,8 @@ nav ul li {
     background-position: center;
     background-size: cover;
 }
+
+
 
 /* tablet viewport */
 @media only screen and (max-width: 1023px) and (min-width: 621px) {
@@ -173,4 +180,67 @@ nav ul li {
         height: 20rem; /* 320px */
         background-position: right;
     }
+}
+#sign-up-cta {
+    position: relative;
+    left: 6.25rem; /* 100px */
+    top: 10.625rem; /* 170px */
+    bottom: 10.625rem; /* 170px */
+    justify-items: center;
+    
+}
+
+#sign-up-cta .content {
+    
+    color:#ffffff;
+    background-color: #9DC20a;
+    border: 0.125rem solid #979797; /* 1px */
+    border-radius: 0.25rem; /* 4px */
+    
+}
+
+#sign-up-cta .header {
+    display: block;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+#sign-up-cta .cursive {
+    margin: 2rem 0 0 0; /* top 32px */
+    font-family: "Damion", sans-serif;	
+    font-size: 2.5rem; /* 40px */
+    font-weight: 400;
+}
+
+#sign-up-cta .striking {
+    margin: 0;
+    font-size: 3.125rem; /* 50px */
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+#sign-up-cta .email {    
+    display: block;
+    line-height: 1.4;
+    width: 25.5rem; /* 408px*/
+    margin: 0.75rem 5rem 3.5rem 5rem; /* 12px 80px 56px 80px */
+    
+}
+#sign-up-cta span {
+    font-size: 1.25rem; /* 20px*/ 
+    font-family: "Roboto", sans-serif;
+    font-weight: 200;
+}
+
+#sign-up-cta .button {
+    font-size: 1.25rem; /* 20px */
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    margin-top: 1.625rem; /* 26px */
+    height: 4rem; /* 64px */
+    width: 25.5rem; /* 408px */
+    background-color: #4a4a4a;
+    border-radius: 0.25rem; /* 4px */
+    align-content: center;
 }
