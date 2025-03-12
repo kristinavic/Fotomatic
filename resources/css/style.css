@@ -258,5 +258,31 @@ nav ul li {
     #sign-up-section {
         height: 20rem; /* 320px */
         background-position: right;
+        justify-content: center;
+    }
+
+    #sign-up-cta {
+        left:0;
+        top: 0;
+        align-content: center;
+    }
+
+    #sign-up-cta .content{
+        background-color: transparent;
+        border: none;
+        margin: 0;
+        font-size: 80%;
+    }
+    #sign-up-cta .cursive {
+        margin: 0;
+        font-size: 2rem;
+    }
+
+    #sign-up-cta .striking {
+        font-size: 2rem;
+    }
+
+    #sign-up-cta .email {
+        display: none;
     }
 }
