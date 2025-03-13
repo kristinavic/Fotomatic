@@ -480,7 +480,7 @@ nav ul li {
 /* mobile viewport  (Filters sect.) */
 @media only screen and (max-width: 620px) {
     #filters-section {
-        padding-top: 2rem;
+        padding: 2rem 0 0 0;
     }
 
     #filters-section h2 {
@@ -497,19 +497,70 @@ nav ul li {
   }
 }
 
+/* -- QUOTES SECTION -- */
+#quotes-section {
+    padding: 5rem 3rem;
+}
 
+#quotes-section .content{
+    display: flex;
+    justify-content: center;
+}
+
+#quotes-section .quote{
+    color: #4A4a4a;
+    font-size: 1.875rem; /* 30px */
+    font-family: "Palatino", serif;
+    font-style: italic;
+    line-height: 1.1;
+}
+
+#quotes-section .quote-citation {
+    padding-left: 1.875rem;
+    align-self: center;
+}
+
+/* tablet viewport  (Quotes sect.) */
+@media only screen and (max-width: 1023px) and (min-width: 621px) {
+    #quotes-section .content{ 
+        text-align: left;
+    }
+}
+
+/* mobile viewport  (Quotes sect.) */
+@media only screen and (max-width: 620px) {
+    #quotes-section {
+        padding: 2.5rem 1.5rem;    
+    }
+    
+    #quotes-section .content{
+        display: grid;
+    }
+
+    #quotes-section .quote{
+        font-size: 1.5rem; /* 24px */
+        font-family: "Palatino", serif;
+        line-height: 1.4;
+    }
+
+    #quotes-section .quote-citation {
+        padding: 1.875rem;
+        align-self: center;
+    }
+    
+}
 
 /* -- FOOTER -- */
 
 
 
 
-/* tablet viewport  (Filters sect.) */
+/* tablet viewport  (Footer sect.) */
 @media only screen and (max-width: 1023px) and (min-width: 621px) {
 
 }
 
-/* mobile viewport  (Filters sect.) */
+/* mobile viewport  (Footer sect.) */
 @media only screen and (max-width: 620px) {
   
 }
