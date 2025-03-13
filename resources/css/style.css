@@ -415,3 +415,67 @@ nav ul li {
         line-height: 1.4;
     }    
 }
+
+
+
+/* -- FILTERS SECTION -- */
+
+#filters-section {
+    background-color: #4a4a4a;
+    padding: 4rem 1%;
+    height:auto;
+}
+
+/* text section */
+#filters-section .content {
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 5rem;
+}
+
+/* inside contents is h2, h3 */
+#filters-section h2 {
+    opacity: 1;
+    font-size: 2.25rem;
+    font-weight: 800;
+}
+
+#filters-section h3 {
+    font-size: 1rem;
+    font-weight: 200;
+    line-height: 1.4;
+}
+
+/* image section */
+#filters-section .images-container {
+    display: flex;
+    max-width: 100%;
+}
+
+/* each image in .images-container*/
+#filters-section .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    overflow: hidden;
+    margin: 0;
+}
+
+#filters-section img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* tablet viewport  (Filters sect.) */
+@media only screen and (max-width: 1023px) and (min-width: 621px) {
+
+}
+
+/* mobile viewport  (Filters sect.) */
+@media only screen and (max-width: 620px) {
+  
+}
