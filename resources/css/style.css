@@ -472,6 +472,40 @@ nav ul li {
 
 /* tablet viewport  (Filters sect.) */
 @media only screen and (max-width: 1023px) and (min-width: 621px) {
+    #filters-section {
+        padding: 4rem 0 0 0;
+    }
+}
+
+/* mobile viewport  (Filters sect.) */
+@media only screen and (max-width: 620px) {
+    #filters-section {
+        padding-top: 2rem;
+    }
+
+    #filters-section h2 {
+        font-size: 1.25rem;
+        font-weight: 400;
+    }
+
+    #filters-section .content {
+        margin-bottom: 2rem;
+        padding: 0 1rem;
+    }
+  #filters-section .extra {
+    display: none;
+  }
+}
+
+
+
+/* -- FOOTER -- */
+
+
+
+
+/* tablet viewport  (Filters sect.) */
+@media only screen and (max-width: 1023px) and (min-width: 621px) {
 
 }
 
