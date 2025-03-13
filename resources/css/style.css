@@ -500,6 +500,7 @@ nav ul li {
 /* -- QUOTES SECTION -- */
 #quotes-section {
     padding: 5rem 3rem;
+    background-color: #ffffff;
 }
 
 #quotes-section .content{
@@ -530,7 +531,7 @@ nav ul li {
 /* mobile viewport  (Quotes sect.) */
 @media only screen and (max-width: 620px) {
     #quotes-section {
-        padding: 2.5rem 1.5rem;    
+        padding: 2.5rem 1.5rem 1rem 1.5rem;    
     }
     
     #quotes-section .content{
@@ -552,15 +553,27 @@ nav ul li {
 
 /* -- FOOTER -- */
 
+footer {
+    background-color: #9b9b9b;
+    color: #ffffff;
+}
 
+footer .content {
+    display: flex;
+    justify-content: space-between; 
+    height: 3.875rem; /* 62px */ 
+    padding: 0 2rem;  
+    font-family: "Roboto", sans-serif;
+    font-size: 0.625rem; /* 10px */
+}
 
-
-/* tablet viewport  (Footer sect.) */
-@media only screen and (max-width: 1023px) and (min-width: 621px) {
-
+footer .copyright, .location {
+    align-content: center;
 }
 
 /* mobile viewport  (Footer sect.) */
 @media only screen and (max-width: 620px) {
-  
+    footer .copyright {
+        font-size: 0.625rem; /* 10px */
+    }
 }
